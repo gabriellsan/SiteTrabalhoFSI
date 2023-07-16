@@ -40,7 +40,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
-    gap: 10px;
+    gap: 5px;
 }
 
 .nav-menu {
@@ -75,20 +75,6 @@ a {
     -webkit-transition: all 0.3s ease-in-out;
     background-color: white;
 }
-
-.fechaMenu {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-  
-    z-index: 1;
-  }
-  .isClose {
-    display: none;
-  }
 
 @media(max-width:768px) {
     .hamburger {
@@ -128,7 +114,7 @@ a {
     }
 
     .input {
-        margin-left: 25px;
+        margin-left: 20px;
     }
 
     
@@ -141,7 +127,10 @@ a {
 
     .navbar {
         display: flex;
-        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 0em 0em 0em 20.5em;
     }
 
     .nav-menu {
@@ -252,10 +241,6 @@ section {
     text-decoration: none;
     color: red;
 }
-
-/* .title_Avisos {
-    background-color: #EFF3FA;
-} */
 
 .conteudo {
     display: flex;
