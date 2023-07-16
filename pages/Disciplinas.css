@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color:#D3C1BB;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#C70039;
+    padding: 1em;
+}
+
+main {
+   margin: 1em 0em 0em 0em;
+}
+
+.disciplinas_name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 0em 1em 0.5em 1em ;
+    margin-bottom: 1em;
+    background-color:  #29afb0;
+    gap: 5px;
+    color: #FFF;
+}
+
+.disciplinas_name button {
+    padding: 0.5em;
+    border-radius: 10px;
+    background-color: #18656F;
+    color: #FFF;
+}
+
+.disciplinas_name button a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+
+.geral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.6em;
+    gap: 1em;
+}
+
+.img_mat{
+    width: 30px;
+}
+
+.img_pot{
+    width: 40px;
+}
+
+.img_geo{
+    width: 40px;
+}
+
+.img_cie{
+    width: 40px;
+}
+
+.img_hist{
+    width: 40px;
+}
+
+.img_art{
+    width: 60px;
+}
+
+.back{
+    margin-left: 0.5em;
+    text-decoration: none;
+    color: #000;
+}
+
+.back:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 360px) {
+    .disciplinas_name {
+      margin: 1em 0.5em 1em 0.5em;
+    }
+
+    .back {
+        margin-left: 1em;
+    }
+  }

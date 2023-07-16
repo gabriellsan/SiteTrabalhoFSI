@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color:#D3C1BB;
+    /* background-color:  #29afb0; */
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    background-color:#C70039;
+}
+
+.links_aulas {
+    margin: 1em 1em 1em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+    gap: 10px;
+    padding: 0.5em 0em 0.5em 0em;
+    background-color: #18656F;
+    border-radius: 10px;
+    color: #FFF;
+}
+
+.links_aulas a {
+    color: white;
+}
+
+.links_aulas a img{
+    width: 15em;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    cursor: pointer;
+}

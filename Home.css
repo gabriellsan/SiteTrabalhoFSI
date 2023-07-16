@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color:#D3C1BB;
+}
+
+.head {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center ;
+    justify-content: center;  
+    background-color:#C70039;
+    padding: 1em; 
+}
+
+header {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center ;
+    /* background-color: #18656F; */
+}
+/* Menu Hamburguer */
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    gap: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-branding {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: dodgerblue;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.fechaMenu {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+    z-index: 1;
+  }
+  .isClose {
+    display: none;
+  }
+
+@media(max-width:768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+   
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color:  #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .input {
+        margin-left: 25px;
+    }
+
+    
+}
+
+@media(max-width:1280px){
+    .hamburger{
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        gap: 10px;
+    }
+
+    .nav-menu {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+
+/* Inputs */
+.input {
+    padding: 0rem 0.5rem 0rem 0rem;
+}
+
+.input form {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem;
+    border: none;
+}
+
+.input form button {
+    border: none;
+    background-color: #98929281;
+    border-radius: 1rem 0em 0rem 1rem;
+}
+
+.input input {
+    padding: 1rem 1rem ;
+    background: transparent;
+    background: blur(10px);
+    border: none;
+    border-radius: 0rem 1em 1rem 0rem;
+    border:1px solid var(--primer-color);
+   /*  background-color: var(--primer-color) ; */
+   background-color: #98929281;
+}
+
+.input input:hover {
+    border: 1px solid #262626;
+}
+
+.input input:focus {
+    outline: 0;
+}
+
+.input input::placeholder {
+    color: #FFFFFF;
+}
+
+/* .nav_bar{
+    background-color: #18656F;   
+} */
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.search {
+    width: 44px;
+}
+
+.meniHamburguer {
+    width: 50px;
+}
+
+.pesquisa {
+    position: absolute;
+    z-index: 0;
+    right: 16.5rem;
+}
+
+main {
+    margin-top: 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img_alunos {
+    width: 15em;
+}
+
+.avisos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    gap: 2em;
+    color: #000;
+}
+
+.avisos a {
+    text-decoration: none;
+    color: red;
+}
+
+/* .title_Avisos {
+    background-color: #EFF3FA;
+} */
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    /* background-color: #EFF3FA; */
+}
